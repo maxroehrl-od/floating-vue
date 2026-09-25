@@ -175,12 +175,12 @@ export default defineComponent({
     },
 
     container: {
-      type: [String, Object, Element, Boolean],
+      type: [String, Object, Element, Boolean] as PropType<string | Node | boolean>,
       default: undefined,
     },
 
     boundary: {
-      type: [String, Element],
+      type: [String, Element] as PropType<string | Element | null>,
       default: undefined,
     },
 
